@@ -6,6 +6,7 @@ import { useUsers } from "@/hooks/useUsers";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { Suspense } from "react";
 
 const queryClient = new QueryClient();
 
@@ -41,7 +42,9 @@ export default function Home() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="container py-10">
+      <Suspense fallback={<TableSkeleton />}>
         <TableWrapper />
+        </Suspense>
       </div>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
