@@ -44,7 +44,7 @@ export interface PaginatedResponse {
   totalItems: number;
 }
 
-const fuzzyFilter: FilterFn<any> = (row, columnId, value, addMeta) => {
+const fuzzyFilter: FilterFn<User> = (row, columnId, value) => {
   const searchValue = value.toLowerCase();
   let cellValue = "";
 
