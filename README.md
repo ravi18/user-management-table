@@ -81,7 +81,7 @@ A modern, responsive table implementation using TanStack Table (React Table) fea
 
 3. **Type Safety**
    - Challenge: Maintaining TypeScript types across components
-   - Solution: Created centralized type definitions for consistent type checking
+   - Solution: Created type definitions for consistent type checking
 
 4. **Hydration Errors**
    - Challenge: Next.js server/client hydration mismatches
