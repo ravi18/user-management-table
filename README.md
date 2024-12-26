@@ -92,8 +92,8 @@ A modern, responsive table implementation using TanStack Table (React Table) fea
 ```typescript
 src/
   ├── components/
-  │   ├── Table.tsx          # Main table component
-  │   └── Skeleton.tsx       # Loading placeholder
+  │   ├── table-skeleton.tsx          # Main table component
+  │   └── user-table.tsx       # Loading placeholder
   ├── hooks/
   │   └── useUsers.ts        # Data fetching & pagination logic
   └── app/
