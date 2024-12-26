@@ -61,7 +61,7 @@ A modern, responsive table implementation using TanStack Table (React Table) fea
 
 ### State Management
 - Utilized React Query for server state management
-- Implemented optimistic updates with `keepPreviousData`
+- Implemented optimistic updates
 - Used URL parameters for shareable and bookmarkable pages
 
 ### Performance Optimizations
@@ -96,7 +96,5 @@ src/
   │   └── Skeleton.tsx       # Loading placeholder
   ├── hooks/
   │   └── useUsers.ts        # Data fetching & pagination logic
-  ├── types/
-  │   └── index.ts           # TypeScript definitions
   └── app/
       └── page.tsx           # Main page component
